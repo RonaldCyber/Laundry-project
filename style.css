@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Aplicación de la Política: Única Fuente de Verdad para Colores */
+:root {
+    --color-primario: cornflowerblue;
+    --color-secundario: #02b1f4;
+    --color-texto-oscuro: #323232;
+    --color-texto-gris: #818181;
+    --color-fondo-claro: #fafafa;
+    --color-blanco: #ffffff;
+    --sombra-suave: rgba(0, 0, 0, 0.1);
+    --sombra-intensa: rgba(0, 0, 0, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--color-fondo-claro);
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: var(--color-texto-oscuro);
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: var(--color-secundario);
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    line-height: 1;
+    color: var(--color-texto-oscuro);
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: var(--color-texto-gris);
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+    border-left: 5px solid var(--color-primario);
+    padding-left: 20px;
+}
+
+.header-small{
+    min-height: auto;
+    padding: 30px 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secundario);
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about-txt {
+    width: 50%;
+    border-left: 5px solid var(--color-primario);
+    padding-left: 20px;
+}
+
+.about-txt h2 {
+    color: var(--color-texto-oscuro);
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: var(--color-texto-gris);
+}
+
+.servicios {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: var(--color-fondo-claro);
+}
+
+.servicios h2 {
+    color: var(--color-texto-oscuro);
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card {
+    padding: 25px;
+    box-shadow: 0 0 30px var(--sombra-suave);
+    flex-basis: calc(25% - 20px);
+    border-radius: 15px;
+    background-color: var(--color-blanco);
+}
+
+.service-card i{
+    font-size: 50px;
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.service-card h3{
+    font-size: 20px;
+    color: var(--color-texto-oscuro);
+    text-transform: capitalize;
+}
+/* Política 2: .service-card p — descripción del servicio dentro de la tarjeta */
+.service-card p {
+    font-size: 13px;
+    color: var(--color-texto-gris);
+    margin-top: 8px;
+}
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px var(--sombra-intensa);
+    background-color: var(--color-blanco);
+}
+
+form h2 {
+    font-size: 25px;
+    color: var(--color-texto-oscuro);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+.input-container > input, textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid var(--color-primario);
+    font-size: 16px;
+    outline: none;
+    color: var(--color-texto-oscuro);
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    border-radius: 20px;
+}
+
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: var(--color-primario);
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px var(--sombra-intensa);
+    border-radius: 25px;
+    color: var(--color-blanco);
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-secundario);
+}
+
+.footer {
+    padding: 50px;
+    background-color: var(--color-fondo-claro);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link ul li {
+    margin-right: 50px;
+}
+
+.link ul li a {
+    color: var(--color-texto-oscuro);
+    font-size: 17px;
+}
+
+.link ul li a:hover {
+    color: var(--color-primario);
+}
+
+.copy{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-texto-gris);
+    font-size: 14px;
+}
+
+.contacto{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contacto h2{
+    font-size: 50px;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 15px;
+}
+
+.contacto p{
+    color: var(--color-texto-gris);
+    margin-bottom: 40px;
+}
+
+.contacto-content{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-info{
+    width: 500px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--sombra-suave);
+    background-color: var(--color-blanco);
+}
+
+.info i{
+    font-size: 25px;
+    color: var(--color-primario);
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-blanco);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .formulario {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link ul li {
+        margin: 0 0 15px 0;
+    }
+}
+
+/* ============================================================
+   POLÍTICA 1 — Única Fuente de Verdad para Colores
+   Se amplían las variables del :root con nuevos tokens necesarios
+   para los componentes añadidos en el Avance 6.
+   Ningún color nuevo se escribe en duro dentro de las clases.
+   ============================================================ */
+:root {
+    --color-exito: #28a745;
+    --color-error: #dc3545;
+    --color-advertencia: #ffc107;
+    --color-tarifa-fondo: #eef6ff;
+    --color-tarifa-borde: cornflowerblue;
+    --radio-tarjeta: 15px;
+    --transicion-base: 0.3s ease;
+}
+
+/* ============================================================
+   SECCIÓN: TARIFAS — style.css → politica-1, politica-2
+   Componente: .tarifas / .tarifa-card
+   Política 1: todos los colores usan variables de :root
+   Política 2: nombres semánticos orientados al dominio del negocio
+   ============================================================ */
+.tarifas {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--color-fondo-claro);
+}
+
+.tarifas h2 {
+    font-size: 50px;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 10px;
+}
+
+.tarifas > p {
+    color: var(--color-texto-gris);
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+/* Política 2: .tarifas-grid describe la función del contenedor,
+   no su posición ni apariencia visual */
+.tarifas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Política 2: .tarifa-card describe el componente de dominio (tarjeta de tarifa),
+   al igual que .service-card describe una tarjeta de servicio */
+.tarifa-card {
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-tarjeta);
+    padding: 35px 30px;
+    width: 240px;
+    box-shadow: 0 0 30px var(--sombra-suave);
+    border-top: 4px solid var(--color-tarifa-borde);
+    transition: transform var(--transicion-base);
+}
+
+.tarifa-card:hover {
+    transform: translateY(-5px);
+}
+
+.tarifa-card i {
+    font-size: 40px;
+    color: var(--color-primario);
+    margin-bottom: 15px;
+}
+
+.tarifa-card h3 {
+    font-size: 20px;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 10px;
+}
+
+/* Política 2: .tarifa-precio describe el dato que muestra (precio de la tarifa) */
+.tarifa-precio {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--color-secundario);
+    margin-bottom: 8px;
+}
+
+.tarifa-card p {
+    font-size: 14px;
+    color: var(--color-texto-gris);
+}
+
+/* ============================================================
+   SECCIÓN: PROCESO — style.css → politica-2
+   Componente: .proceso / .paso-card
+   Política 2: .paso-card describe "tarjeta de paso del proceso",
+   sin numeración ni colores en el nombre de clase
+   ============================================================ */
+.proceso {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.proceso h2 {
+    font-size: 50px;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 10px;
+}
+
+.proceso > .container > p {
+    color: var(--color-texto-gris);
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.proceso-steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Política 2: .paso-card → componente del dominio "paso del proceso de atención" */
+.paso-card {
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-tarjeta);
+    padding: 30px 20px;
+    width: 200px;
+    box-shadow: 0 0 20px var(--sombra-suave);
+    transition: transform var(--transicion-base);
+}
+
+.paso-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Política 2: .paso-numero describe el dato (número de orden del paso),
+   no su forma visual */
+.paso-numero {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-size: 22px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+.paso-card h3 {
+    font-size: 17px;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 8px;
+}
+
+.paso-card p {
+    font-size: 14px;
+    color: var(--color-texto-gris);
+}
+
+/* ============================================================
+   SECCIÓN: FORMULARIO — FEEDBACK DE VALIDACIÓN (Política 3)
+   Política 3: Prevención de errores — retroalimentación visual
+   cuando un campo es válido (:valid) o inválido (:invalid).
+   No se modifica el HTML existente; el CSS extiende el comportamiento
+   con pseudoclases nativas del navegador.
+   ============================================================ */
+
+/* Campo válido: borde verde después de interacción (focus + valid) */
+.input-container > input:focus:valid,
+.input-container > textarea:focus:valid {
+    border-color: var(--color-exito);
+}
+
+/* Campo inválido tras haber sido tocado */
+.input-container > input:focus:invalid,
+.input-container > textarea:focus:invalid {
+    border-color: var(--color-error);
+}
+
+/* ============================================================
+   SECCIÓN: CONTACTO — HORARIOS Y MAPA (Política 2)
+   Componente: .horario-tabla / .mapa-embed
+   Política 2: nombres semánticos que describen el contenido
+   ============================================================ */
+
+/* Política 2: .horario-tabla describe la tabla de horarios de atención */
+.horario-tabla {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    border-collapse: collapse;
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-tarjeta);
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--sombra-suave);
+}
+
+.horario-tabla th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.horario-tabla td {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--color-texto-oscuro);
+    border-bottom: 1px solid var(--color-tarifa-fondo);
+}
+
+.horario-tabla tr:last-child td {
+    border-bottom: none;
+}
+
+/* Política 2: .mapa-embed describe el componente de mapa embebido */
+.mapa-embed {
+    margin-top: 40px;
+    border-radius: var(--radio-tarjeta);
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--sombra-suave);
+}
+
+.mapa-embed iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    display: block;
+}
+
+/* ============================================================
+   RESPONSIVE — extensión de los nuevos componentes
+   Sigue el mismo breakpoint ya definido en el archivo original
+   ============================================================ */
+@media (max-width: 991px) {
+    .tarifas-grid,
+    .proceso-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarifa-card,
+    .paso-card {
+        width: 90%;
+    }
+
+    .tarifas h2,
+    .proceso h2 {
+        font-size: 35px;
+    }
+}
+/* ============================================================
+   AVANCE 7 — RONALD SEMINARIO SANTANA
+   ============================================================ */
+
+:root {
+    --color-servicio-icono: #00aaff;
+}
+
+.service-card i {
+    color: var(--color-servicio-icono);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario .input-container > input:focus:valid,
+.formulario .input-container > textarea:focus:valid {
+    border-color: var(--color-exito);
+}
+
+.formulario .input-container > input:focus:invalid,
+.formulario .input-container > textarea:focus:invalid {
+    border-color: var(--color-error);
+}
+
+@media (max-width: 991px) {
+    .input-group {
+        width: 100%;
+    }
+}
+
+/* ============================================================
+   SECCIÓN: AUTENTICACIÓN (LOGIN / REGISTRO)
+   ============================================================ */
+.auth-link {
+    margin-top: 25px;
+    font-size: 15px;
+    color: var(--color-texto-gris);
+}
+
+.auth-link a {
+    color: var(--color-primario);
+    font-weight: 600;
+    transition: color var(--transicion-base);
+}
+
+.auth-link a:hover {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
